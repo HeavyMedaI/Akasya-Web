@@ -71,6 +71,104 @@ var Application = function(e){
             $(o.target).sidebar("toggle");
         });
 
+    },
+
+    this.page = function(page){
+
+        eval("this."+page);
+
+    },
+
+    this.alanadi = function () {
+
+        $(".check-domain").click(function(){
+
+            $(".siparis-alanadi").css("display","none");
+
+            $(".input-alanadi > i.icon").removeAttr("class").addClass("icon");
+
+            $(".input-alanadi").addClass("loading");
+
+            var Domain = $("input[name='alan_adi']").val()
+                .replace("ww.","")
+                .replace("www.","");
+
+            if(Domain.length<=0){
+
+                $(".input-alanadi").removeClass("loading");
+
+                $(".input-alanadi > i.icon").addClass("close");
+
+                $("p.description-alanadi").text("Lütfen bir Alan Adı giriniz!");
+
+                return false;
+
+            }
+
+            if(Domain.indexOf(".")<=-1){
+
+                $(".input-alanadi").removeClass("loading");
+
+                $(".input-alanadi > i.icon").addClass("close");
+
+                $("p.description-alanadi").text("Geçersiz bir Alan Adı girdiniz!");
+
+                return false;
+
+            }
+
+            $.post("System/whois.php", {domain_name: Domain}, function(e){
+
+                var parseJSON = e;
+
+                $(".input-alanadi").removeClass("loading");
+
+                if(parseJSON.available){
+
+                    $(".input-alanadi > i.icon").addClass("checkmark");
+
+                    $("p.description-alanadi").text("Bu Alan Adı müsait.");
+
+                    $(".siparis-alanadi").css("display","inline-block").click(function(){
+
+                        $(".siparis-alanadi-form").modal("show");
+
+                        $(".siparis-alanadi-form .form-alanadi > .input > input[name='domain']").val("www."+Domain);
+                        
+                        $(".siparis-alanadi-form .siparis-done").click(function () {
+
+                            var Name = $(".siparis-alanadi-form input[name='firstname']").val() + " " + $(".siparis-alanadi-form input[name='surname']").val();
+
+                            var Phone = $(".siparis-alanadi-form input[name='phone']").val();
+
+                            var Mail = $(".siparis-alanadi-form input[name='email']").val();
+
+                            $.post("System/AlanadiSiparis.php", {name: Name, phone: Phone, mail: Mail, domain: Domain}, function(json){
+
+                                  if(json.response){
+
+
+
+                                  }
+
+                            });
+
+                        });
+
+                    });
+
+                }else{
+
+                    $(".input-alanadi > i.icon").addClass("close");
+
+                    $("p.description-alanadi").text("Bu Alan Adı başkası tarafından kayıt edilmiş.");
+
+                }
+
+            });
+
+        });
+
     }
 
 }

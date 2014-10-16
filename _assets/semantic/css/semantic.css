@@ -14962,7 +14962,7 @@ ol.ui.list li,
 .ui.list .header {
   font-weight: bold;
 }
-.ui.list .description {
+.ui.list  list-desc.description {
   color: rgba(0, 0, 0, 0.5);
 }
 /* Floated Content */

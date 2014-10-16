@@ -181,6 +181,10 @@
     box-shadow: none;
 }
 
+.list-desc{
+    color: #ffffff;
+}
+
 /** TOP MENU */
 
     .ust-menu-wrapper > .menu{

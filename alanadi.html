@@ -35,6 +35,13 @@
 <main class="ui main-wrapper grid segment no-border">
 <div class="ui row inverted teal page grid segment ust-kutu-wrapper no-border">
     <div class="only computer tablet two wide left floated aligned column"></div>
+    <div class="only mobile two wide left floated aligned column mobile-menu-stuff-wrapper">
+        <div class="ui left floated icon menu">
+            <a id="f-blue" class="item mobile-menu-button">
+                <i class="reorder icon"></i>
+            </a>
+        </div>
+    </div>
     <div class="twelve wide left floated aligned column contact-stuff-wrapper">
         <div class="ui relaxed horizontal list">
             <div class="item">
@@ -51,10 +58,16 @@
             </div>
         </div>
     </div>
-    <div class="only mobile two wide right floated aligned column mobile-menu-stuff-wrapper">
+    <div class="only computer tablet two wide right floated column social-stuff-wrapper">
         <div class="ui right floated icon menu">
-            <a id="f-blue" class="item mobile-menu-button">
-                <i class="reorder icon"></i>
+            <a id="f-blue" class="item">
+                <i class="facebook icon"></i>
+            </a>
+            <a id="t-blue" class="item">
+                <i class="twitter icon"></i>
+            </a>
+            <a id="g-red" class="item">
+                <i class="google icon"></i>
             </a>
         </div>
     </div>
@@ -72,13 +85,12 @@
                 <i class="settings icon"></i>
                 Hizmetlerimiz <i class="icon dropdown"></i>
                 <div class="menu">
-                    <a class="item"><i class="cube icon"></i> Web Tasarım</a>
-                    <a class="item"><i class="code icon"></i> Web Programlama</a>
-                    <a class="item"><i class="bookmark icon"></i> Marka Tescili</a>
-                    <a class="item"><i class="font icon"></i> Alan Adı Tescili</a>
-                    <a class="item"><i class="cubes icon"></i> Hosting Hizmetleri</a>
-                    <a class="item"><i class="search icon"></i> SEO Hizmetleri</a>
-                    <a class="item"><i class="suitcase icon"></i> Reklam Danışmanlığı</a>
+                    <a class="item" href="webtasarim.html"><i class="cube icon"></i> Web Tasarım</a>
+                    <a class="item" href="webprogramlama.html"><i class="code icon"></i> Web Programlama</a>
+                    <a class="item" href="alanadi.html"><i class="font icon"></i> Alan Adı Tescili</a>
+                    <a class="item" href="hosting.html"><i class="cubes icon"></i> Hosting Hizmetleri</a>
+                    <a class="item" href="seo.html"><i class="search icon"></i> SEO Hizmetleri</a>
+                    <a class="item" href="reklam.html"><i class="suitcase icon"></i> Reklam Danışmanlığı</a>
                 </div>
             </div>
             <a class="item">
@@ -99,13 +111,12 @@
         <i class="settings icon"></i>
         <b>Hizmetlerimiz</b>
         <div class="menu">
-            <a class="item"> Web Tasarım</a>
-            <a class="item"> Web Programlama</a>
-            <a class="item"> Marka Tescili</a>
-            <a class="item"> Alan Adı Tescili</a>
-            <a class="item"> Hosting Hizmetleri</a>
-            <a class="item"> SEO Hizmetleri</a>
-            <a class="item"> Reklam Danışmanlığı</a>
+            <a class="item" href="webtasarim.html"> Web Tasarım</a>
+            <a class="item" href="webprogramlama.html"> Web Programlama</a>
+            <a class="item" href="alanadi.html"> Alan Adı Tescili</a>
+            <a class="item" href="hosting.html"> Hosting Hizmetleri</a>
+            <a class="item" href="seo.html"> SEO Hizmetleri</a>
+            <a class="item" href="reklam.html"> Reklam Danışmanlığı</a>
         </div>
     </div>
     <a class="item">
@@ -191,83 +202,40 @@
         </div>
     </div>
 </div>
-<div class="ui page teal grid row stackable relaxed feature segment content2-stuff-wrapper">
-    <div class="ui column page grid icerik2">
-        <div class="ui three items">
-            <div class="item">
-                <div class="image">
-                    <img src="http://semantic-ui.com/images/demo/highres4.jpg">
-                    <a class="star ui corner label">
-                        <i class="star icon"></i>
-                    </a>
-                </div>
-                <div class="content">
-                    <div class="name">Cute Dog</div>
-                    <p class="description">This dog has some things going for it. Its pretty cute and looks like it'd be fun to cuddle up with.</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="http://semantic-ui.com/images/demo/highres5.jpg">
-                    <a class="star ui corner label">
-                        <i class="star icon"></i>
-                    </a>
-                </div>
-                <div class="content">
-                    <div class="name">Faithful Dog</div>
-                    <p class="description">Sometimes its more important to have a dog you know you can trust. But not every dog is trustworthy, you can tell by looking at its smile.</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="http://semantic-ui.com/images/demo/highres3.jpg">
-                    <a class="star ui corner label">
-                        <i class="star icon"></i>
-                    </a>
-                </div>
-                <div class="content">
-                    <div class="name">Silly Dog</div>
-                    <p class="description">Silly dogs can be quite fun to have as companions. You never know what kind of ridiculous thing they will do.</p>
-                </div>
-            </div>
+<div class="ui inverted page teal grid row stackable  feature segment content2-stuff-wrapper">
+
+
+    <div class="row">
+        <div class="column">
+            <h1 class="center aligned ui header">
+                Alan Adı Sorgulama
+            </h1>
         </div>
-        <div class="ui horizontal divider"><i class="heart icon"></i></div> <br />
-        <div class="ui three items">
-            <div class="item">
-                <div class="image">
-                    <img src="http://semantic-ui.com/images/demo/highres4.jpg">
-                    <a class="star ui corner label">
-                        <i class="star icon"></i>
-                    </a>
+    </div>
+    <div class="row">
+        <div class="sixteen wide column">
+            <h2 class="ui header">Alan Adı Sorgulama</h2>
+            <p>
+            <div class="ui grid aligned center">
+                <div class="fourteen wide column">
+                    <div class="ui fluid huge input search icon input-alanadi">
+                        <input name="alan_adi" type="text" placeholder="Örnek: alanadi.com">
+                        <i class="icon"></i>
+                    </div>
                 </div>
-                <div class="content">
-                    <div class="name">Cute Dog</div>
-                    <p class="description">This dog has some things going for it. Its pretty cute and looks like it'd be fun to cuddle up with.</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="http://semantic-ui.com/images/demo/highres5.jpg">
-                    <a class="star ui corner label">
-                        <i class="star icon"></i>
-                    </a>
-                </div>
-                <div class="content">
-                    <div class="name">Faithful Dog</div>
-                    <p class="description">Sometimes its more important to have a dog you know you can trust. But not every dog is trustworthy, you can tell by looking at its smile.</p>
+                <div class="one wide column">
+                    <div class="circular ui huge icon button check-domain">
+                        <i class="icon search"></i>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="image">
-                    <img src="http://semantic-ui.com/images/demo/highres3.jpg">
-                    <a class="star ui corner label">
-                        <i class="star icon"></i>
-                    </a>
-                </div>
-                <div class="content">
-                    <div class="name">Silly Dog</div>
-                    <p class="description">Silly dogs can be quite fun to have as companions. You never know what kind of ridiculous thing they will do.</p>
-                </div>
+            </p>
+            <div class="clearing clearfix"><br /></div>
+            <p class="description-alanadi"></p>
+            <div class="clearing clearfix"><br /></div>
+            <div style="display: none;" class="ui basic inverted animated button button siparis-alanadi">
+                <div class="visible content">Sipariş Ver</div>
+                <div class="hidden content"><i class="right arrow icon"></i></div>
             </div>
         </div>
     </div>
@@ -321,13 +289,12 @@
             <div class="column">
                 <div class="ui header">Hizmetlerimiz</div>
                 <div class="ui inverted link list">
-                    <a class="item"><i class="cube icon"></i> Web Tasarım</a>
-                    <a class="item"><i class="code icon"></i> Web Programlama</a>
-                    <a class="item"><i class="bookmark icon"></i> Marka Tescili</a>
-                    <a class="item"><i class="font icon"></i> Alan Adı Tescili</a>
-                    <a class="item"><i class="cubes icon"></i> Hosting Hizmetleri</a>
-                    <a class="item"><i class="search icon"></i> SEO Hizmetleri</a>
-                    <a class="item"><i class="suitcase icon"></i> Reklam Danışmanlığı</a>
+                    <a class="item" href="webtasarim.html"><i class="cube icon"></i> Web Tasarım</a>
+                    <a class="item" href="webprogramlama.html"><i class="code icon"></i> Web Programlama</a>
+                    <a class="item" href="alanadi.html"><i class="font icon"></i> Alan Adı Tescili</a>
+                    <a class="item" href="hosting.html"><i class="cubes icon"></i> Hosting Hizmetleri</a>
+                    <a class="item" href="seo.html"><i class="search icon"></i> SEO Hizmetleri</a>
+                    <a class="item" href="reklam.html"><i class="suitcase icon"></i> Reklam Danışmanlığı</a>
                 </div>
             </div>
             <div class="column">
@@ -368,11 +335,97 @@
         </div>
     </div>
 </div>
+<div class="ui large modal siparis-alanadi-form">
+    <i class="close icon"></i>
+    <div class="header">
+        Alan Adı Siparişi Ver
+    </div>
+    <div class="content">
+        <div class="ui fluid form segment">
+            <div class="two fields">
+                <div class="field">
+                    <label>Adınız</label>
+                    <div class="ui left labeled icon input">
+                        <input name="firstname" type="text" placeholder="Adınız">
+                        <i class="user icon"></i>
+                        <div class="ui red corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Soyadınız</label>
+                    <div class="ui left labeled icon input">
+                        <input name="surname" type="text" placeholder="Soyadınız">
+                        <i class="user icon"></i>
+                        <div class="ui red corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Telefon</label>
+                    <div class="ui left labeled icon input">
+                        <input name="phone" type="tel" placeholder="Telefon">
+                        <i class="phone icon"></i>
+                        <div class="ui red corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>E-Posta</label>
+                    <div class="ui left labeled icon input">
+                        <input name="email" type="email" placeholder="E-Posta">
+                        <i class="mail icon"></i>
+                        <div class="ui red corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field form-alanadi">
+                <label>Alan Adı</label>
+                <div class="ui left labeled icon input">
+                    <input name="domain" type="text" placeholder="Alan Adı" readonly="readonly">
+                    <i class="globe icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui negative button">
+            İptal
+        </div>
+        <div class="ui positive right labeled button siparis-done">
+            Sipariş Ver
+        </div>
+    </div>
+</div>
+<div class="ui modal info message">
+    <i class="close icon"></i>
+    <div class="header">
+        Was this what you wanted?
+    </div>
+    <ul class="list">
+        <li>It's good to see you again.</li>
+        <li>Did you know it's been a while?</li>
+    </ul>
+</div>
 </main>
 <script type="text/javascript" src="./_assets/plugins/simple-parallax/js/imagesloaded.js"></script>
 <script type="text/javascript" src="./_assets/plugins/simple-parallax/js/skrollr.js"></script>
 <script type="text/javascript" src="./_assets/plugins/simple-parallax/js/_main.js"></script>
 <script type="text/javascript" src="./_assets/js/Application.js"></script>
 <script type="text/javascript" src="./_assets/js/scripts.js"></script>
+<script>
+    $(function(){
+
+        App(window).alanadi();
+
+    });
+</script>
 </body>
 </html>
