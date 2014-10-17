@@ -143,7 +143,7 @@ var Application = function(e){
 
                             var Mail = $(".siparis-alanadi-form input[name='email']").val();
 
-                            $.post("System/AlanadiSiparis.php", {name: Name, phone: Phone, mail: Mail, domain: Domain}, function(json){
+                            $.post("System/Siparis.php", {type: 'domain', name: Name, phone: Phone, mail: Mail, domain: Domain}, function(json){
 
                                   if(json.response){
 
@@ -168,6 +168,38 @@ var Application = function(e){
             });
 
         });
+
+    },
+
+    this.hosting = function(){
+
+          $(".price-plan-buy").click(function(){
+
+              var Data = eval("(" + $(this).data("content") + ")");
+
+              $(".siparis-hosting-form").modal("show");
+
+              $(".siparis-hosting-form .siparis-done").click(function () {
+
+                  var Name = $(".siparis-hosting-form input[name='firstname']").val() + " " + $(".siparis-hosting-form input[name='surname']").val();
+
+                  var Phone = $(".siparis-hosting-form input[name='phone']").val();
+
+                  var Mail = $(".siparis-hosting-form input[name='email']").val();
+
+                  $.post("System/Siparis.php", {type: 'hosting', name: Name, phone: Phone, mail: Mail, plan: Data.name, price: Data.price}, function(json){
+
+                      if(json.response){
+
+
+
+                      }
+
+                  });
+
+              });
+
+          });
 
     }
 

@@ -185,6 +185,63 @@
     color: #ffffff;
 }
 
+/** HOSTING PRICING TABLE */
+
+.content2-stuff-wrapper .pricing-table-stuff > thead > tr > th{
+    padding: 30px !important;
+    text-align: center;
+    background-color: #F0F0F0 !important;
+    color: #4A4A4A !important;
+}
+.content2-stuff-wrapper .pricing-table-stuff > thead > tr > th > h2{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.content2-stuff-wrapper .pricing-table-stuff > thead > tr > th > span.header-content{
+    font-size: 1em;
+}
+.content2-stuff-wrapper .pricing-table-stuff > tbody{
+    background-color: #F4F4F4;
+}
+.content2-stuff-wrapper .pricing-table-stuff > tbody > tr > td{
+    padding: 1px !important;
+    border: 1px #aaa;
+}
+.content2-stuff-wrapper .pricing-table-stuff > tbody > tr > td > table{
+    width: 100%;
+    height: 100%;
+}
+.content2-stuff-wrapper .pricing-table-stuff > tbody > tr > td > table tr > td{
+    padding: 30px !important;
+    text-align: center;
+    color: #4A4A4A !important;
+}
+.content2-stuff-wrapper .pricing-table-stuff > tbody > tr > td > table tr > td{
+     font-size: 0.89em;
+}
+.content2-stuff-wrapper .pricing-table-stuff > tbody > tr > td > table tr.price > td{
+    padding: 30px !important;
+    text-align: center;
+    color: #ef4135 !important;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.content2-stuff-wrapper .pricing-table-stuff > tbody > tr > td > table{
+    border-right: 1px solid #DDDDDD !important;
+}
+.content2-stuff-wrapper .pricing-table-stuff > tbody > tr > td > table.bingo-plan{
+    border: 0px !important;
+    box-shadow: 1px 1px 10px 0px #aaaaaa !important;
+}
+.content2-stuff-wrapper .pricing-table-stuff > tfoot > tr > th{
+    padding: 30px !important;
+    text-align: center;
+    background-color: #F0F0F0 !important;
+    color: #4A4A4A !important;
+}
+
+/** HOSTING PRICING TABLE END */
+
 /** TOP MENU */
 
     .ust-menu-wrapper > .menu{
@@ -203,7 +260,17 @@
     .ust-menu-wrapper > .menu a.logo-stuff{
         position: absolute;
         z-index: 9;
-        top: -23px;
+        top: -17px;
+        left: 30px;
+        padding: 25px !important;
+    }
+
+    .ust-menu-wrapper > .menu a.logo-stuff.logo > i.icon.huge{
+        background-image: url('./../../images/logo.png');
+        background-size: 100% 100%;
+        /*width: 175px;*/
+        /*width: 2.91em;*/
+        width: 11.65rem;
     }
 
 /** TOP MENU END */
