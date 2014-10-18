@@ -1,21 +1,18 @@
 <?php
 
-    $Settings = new stdClass();
+    class SETTINGS{
 
-    $Settings->isHTML = TRUE;
+        public static $IS_HTML = TRUE;
+        public static $SECURE = "tls";
+        public static $SMTP_HOST = "smtp.gmail.com";
+        public static $SMTP_PORT = "587";
+        public static $SMTP_USER = "musaatalay.mobile@gmail.com";
+        public static $SMTP_PASSWORD = "adali125890";
 
-    $Settings->admin_mail = "musaatalay@mail.com.tr";
+        public static $TITLE = "Akasya Bilişim";
+        public static $SENDER_MAIL =  "byhackro@gmail.com";
+        public static $ADMIN_MAIL =  "musaatalay@mail.com.tr";
 
-    $Settings->sender_mail = "musaatalay@mail.com.tr";
-
-    $Settings->title = "Akasya Bilişim";
-
-    $Settings->smtp_host = "SMTP HOST";
-
-    $Settings->smtp_port = "SMTP PORT";
-
-    $Settings->smtp_user = "SMTP USER";
-
-    $Settings->smtp_password = "SMTP PASSWORD";
+    }
 
 ?>

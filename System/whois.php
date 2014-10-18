@@ -10,8 +10,6 @@
 
     $Domain = str_replace(array("http://","www."), NULL, strtolower(@$_REQUEST["domain_name"]));
 
-    //$Domain = "google.com";
-
     $Whois = new Phois\Whois\Whois($Domain);
 
     //echo $Whois->info();

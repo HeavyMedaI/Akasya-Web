@@ -6,6 +6,8 @@
  * Time: 15:45
  */
 
+    ob_start();
+
     require_once 'class/Siparis.php';
     require_once 'class/SiparisGonder.php';
 

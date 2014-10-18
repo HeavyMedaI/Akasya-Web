@@ -46,12 +46,6 @@ class Siparis {
 
     }
 
-    public function Surname(){
-
-        return @$this->Data["surname"];
-
-    }
-
     public function Phone(){
 
         return @$this->Data["phone"];

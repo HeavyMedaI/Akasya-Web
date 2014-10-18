@@ -147,7 +147,7 @@ var Application = function(e){
 
                                   if(json.response){
 
-
+                                      $(".islem-yanit").modal("show");
 
                                   }
 
@@ -177,6 +177,8 @@ var Application = function(e){
 
               var Data = eval("(" + $(this).data("content") + ")");
 
+              $(".siparis-hosting-form .form-alanadi > .input > input[name='domain']").val(Data.name + " - " + Data.price);
+
               $(".siparis-hosting-form").modal("show");
 
               $(".siparis-hosting-form .siparis-done").click(function () {
@@ -191,7 +193,7 @@ var Application = function(e){
 
                       if(json.response){
 
-
+                             $(".islem-yanit").modal("show");
 
                       }
 
