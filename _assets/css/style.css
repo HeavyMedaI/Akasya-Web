@@ -185,6 +185,16 @@
     color: #ffffff;
 }
 
+.referanslar-bant-content{
+    text-align: center !important;
+    font-weight: bold;
+}
+
+.shaping{
+    transform: translateX(0px) rotateY(360deg);
+    -webkit-transition: 2000ms; transition: 2000ms;
+}
+
 /** HOSTING PRICING TABLE */
 
 .content2-stuff-wrapper .pricing-table-stuff > thead > tr > th{

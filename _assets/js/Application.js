@@ -38,6 +38,135 @@ var Application = function(e){
             .eq(3).shape('flip back').end();
 
     },
+        
+    this.shape = function (o,d) {
+        o = o || {};
+
+        $(this.element).mouseover(function(){
+
+            $(this.element).find("img.referanslar-bant-img").addClass(o.styleClass);
+
+            $(this.element).mouseout(function(){
+
+                $(this.element).find("img.referanslar-bant-img").removeClass(o.styleClass);
+
+                App(this.element).shape({
+                    styleClass: o.styleClass
+                });
+            });
+
+        });
+
+        /*if($(this.element).find("img.referanslar-bant-img").hasClass(o.styleClass)){
+
+            $(this.element).find("img.referanslar-bant-img").removeClass(o.styleClass);
+
+            $(this.element).mouseover(function(){
+                App(this.element).shape({
+                    styleClass: o.styleClass
+                });
+            });
+
+        }else{
+
+            $(this.element).find("img.referanslar-bant-img").addClass(o.styleClass);
+
+            $(this.element).mouseout(function(){
+                App(this.element).shape({
+                    styleClass: o.styleClass
+                });
+            });
+
+        }*/
+
+        /*
+
+        var ELEMENT = this.element;
+
+        var DURATION = o.duration || d;
+
+        $(ELEMENT).animate({deg: o.deg}, {
+            duration: DURATION,
+            step: function(deg){
+                $(this).css({
+                    transform: "rotateY(" + deg + "deg)"
+                });
+                //$(this).addClass(o.styleClass);
+                o.callback(ELEMENT, o.deg, DURATION);
+            },
+            complete: function(){
+                //o.callback($(this), o.deg, duration);
+            }
+        });*/
+
+        //o.callback(ELEMENT, o.deg, duration);
+
+        //IMG.attr("style","transform: translateX(0px) rotateY(180deg); -webkit-transition: 700ms; transition: 700ms;");
+
+        return true;
+
+    },
+        
+    /*this.shapeToggle = function(o,d){
+        o = o || {};
+
+        var Duration = o.duration || d;
+
+        $(this.element).mouseout(function(){
+
+            App($(this)).shape({
+                deg: o.deg,
+                callback: function(_this, deg, duration){
+                    $(_this).mouseout(function(){
+                        App(_this).shape({
+                            deg: 0,
+                            duration: duration,
+                            callback: function(__this, deg, duration){
+                                App(__this).shapeListener({
+                                    deg: deg
+                                }, duration);
+                            }
+                        });
+                    });
+                }
+            }, Duration);
+    }*/
+
+    this.shapeListener = function(o,d){
+        o = o || {};
+
+        var Duration = o.duration || d;
+
+        $(this.element).mouseover(function(){
+
+            App($(this)).shape({
+                deg: o.deg,
+                callback: function(_this, deg, duration){
+                    $(_this).mouseout(function(){
+                        App(_this).shape({
+                            deg: 0,
+                            duration: duration,
+                            callback: function(__this, deg, duration){
+                                App(__this).shapeToggle({
+                                    deg: deg
+                                }, duration);
+                            }
+                        });
+                    });
+                }
+            }, Duration);
+        });
+
+        /*$(this.element).onmouseout(function(){
+            App($(this)).shape({
+                deg: 100,
+                duration: 2000
+            });
+        });*/
+
+        return true;
+
+    }
 
     this.scrollFixed = function(o){
 

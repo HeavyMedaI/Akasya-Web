@@ -33,6 +33,23 @@ $(function(){
         App('.content-stuff-wrapper > .shape-stuff > .column > .ui.shape').fourshape();
     }, 5000);
 
+    /*$(".referanslar-bant").mouseover(function(e){
+        App($(this)).shape({
+            styleClass: "shaping"
+        }, false);
+    });*/
+
+    App(".referanslar-bant").shape({
+        styleClass: "shaping"
+    }, false);
+
+    /*
+     App("img.referanslar-bant-img").shapeListener({
+     deg: 360,
+     toggle: "mouseout"
+     }, 1000);
+     */
+
     App(window).scrollFixed({
         target: ".row.ust-kutu-wrapper",
         afterScrolled: 5,
